@@ -45,7 +45,7 @@ export default function (app, vueClipboardConfig) {
           action: function () {
             return binding.arg === 'cut' ? 'cut' : 'copy'
           },
-          container: vueClipboardConfig.autoSetContainer ? el : undefined,
+          container: VueClipboardConfig.autoSetContainer ? el : undefined,
         })
         clipboard.on('success', function (e) {
           var callback = el._vClipboard_success
